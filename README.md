@@ -9,19 +9,23 @@ This example demonstrates how to use the `transformers` library to test this mod
 ```python
 from transformers import pipeline
 
-# Load the pre-trained model
+# Initialize the text correction pipeline
 corrector = pipeline("text2text-generation", model="sehilnlf/model_v6")
 
+# Maximum length for the generated text
 MAX_LENGTH = 512
 
-# Define the text samples
-texts = ['Hope you would be okay.']
+# Define the text samples to be corrected
+texts = ["Hope you would be okay."]
 
-# Batch prediction
+# Generate corrected text for each sample
 predictions = corrector(texts, max_length=MAX_LENGTH)
 
-# Collect and print predictions
-predicts = []
-for text, pred in zip(texts, predictions):
-    predicts.append(pred['generated_text'])
-    print("- " + pred['generated_text'])
+# Initialize a list to store the corrected texts
+corrected_texts = []
+
+# Print and store each corrected text
+for text, prediction in zip(texts, predictions):
+    corrected_text = prediction['generated_text']
+    corrected_texts.append(corrected_text)
+    print(f"- {corrected_text}")
