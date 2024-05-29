@@ -1,4 +1,4 @@
-# English-Grammar-checking-tool
+# English-Grammar-Correction-App
 [Ongoing]
 English Grammar Correction App using transformers model: facebook/bart-large. Re and difflib is to preprocess.
 
@@ -30,3 +30,5 @@ for text, prediction in zip(texts, predictions):
     corrected_text = prediction['generated_text']
     corrected_texts.append(corrected_text)
     print(f"- {corrected_text}")
+
+
