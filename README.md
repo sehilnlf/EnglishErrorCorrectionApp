@@ -1,6 +1,6 @@
 # English-Grammar-Correction-App
 [Ongoing]
-English Error Correction tool using transformers model: **facebook/bart-large** to correct grammar error. **Re and difflib** is to correct typing error.
+English Error Correction tool using transformers model: **facebook/bart-large** to correct grammar error. **Re and difflib library** is to correct typing error.
 
 
 ### Inference
