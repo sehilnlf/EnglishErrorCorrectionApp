@@ -1,11 +1,11 @@
 # English-Grammar-Correction-App
 [Ongoing]
-English Grammar Correction App using transformers model: facebook/bart-large. Re and difflib is to preprocess.
+English Error Correction tool using transformers model: **facebook/bart-large** to correct grammar error. **Re and difflib** is to correct typing error.
 
 
 ### Inference
 
-This example demonstrates how to use the `transformers` library to test this model.
+This example demonstrates how to use the `transformers` library to test model.
 
 ```python
 from transformers import pipeline
@@ -30,5 +30,6 @@ for text, prediction in zip(texts, predictions):
     corrected_text = prediction['generated_text']
     corrected_texts.append(corrected_text)
     print(f"- {corrected_text}")
+```
 
 
