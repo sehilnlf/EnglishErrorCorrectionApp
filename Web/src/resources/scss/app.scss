@@ -19,9 +19,7 @@
     text-align: left;
     font-family: Arial;
     font-size: 17px;
-    // margin: 0;
     margin-left: 10px;
-    // align-self: flex-start;
     font-weight: bold;
 }
 
@@ -32,8 +30,6 @@ html, body {
     margin: 0; 
 }
 body { 
-    // position: fixed;
-    // position: relative;
     font-family: Arial;
     margin: 0;
     padding: 0;
@@ -104,78 +100,6 @@ footer span {
 
 
 // /*GRAMMAR*/
-// .grammar .correction-container {
-//     // display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin: 20px 0;
-// }
-
-// .grammar .triangle-left {
-//     width: 100px;
-//     height: 0;
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid transparent;
-//     border-bottom: 50px solid $black-color;
-//     margin: 0 20px;
-//     align-items: left;
-// }
-
-// .grammar .triangle-right {
-//     width: 100px;
-//     height: 0;
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid transparent;
-//     border-bottom: 50px solid $black-color;
-//     margin: 0 20px;
-//     margin-left: auto;
-// }
-
-// .grammar .text-box {
-//     border: 2px solid $black-color;
-//     padding: 20px;
-//     margin: 0 10px;
-//     width: 550px;
-//     height: 190px;
-//     display: flex;
-//     justify-content: left;
-//     align-items: flex-start; /* Align items to the top */;
-//     text-align: left;
-//     text-align: top;
-//     margin-top: 20px;
-//     border-radius: 10px;
-
-// }
-
-// .grammar .text-box form {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-// }
-
-// .grammar form {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-// }
-
-// .grammar textarea {
-//     border: 2px solid $black-color;
-//     padding: 20px;
-//     margin: 0 10px;
-//     width: 550px;
-//     height: 190px;
-//     display: flex;
-//     justify-content: left;
-//     align-items: flex-start; /* Align items to the top */;
-//     text-align: left;
-//     text-align: top;
-//     margin-top: 20px;
-//     border-radius: 10px;
-
-//     // resize: none;
-//     background-color: $white-color;
-// }
 .grammar .form-and-textbox {
     display: flex;
     align-items: center;
@@ -189,15 +113,6 @@ footer span {
     margin: 20px 0;
 }
 
-// .grammar .triangle-left,
-// .grammar .triangle-right {
-//     width: 0;
-//     height: 0;
-//     border-left: 50px solid transparent;
-//     border-right: 50px solid transparent;
-//     border-bottom: 50px solid $black-color;
-//     margin: 0 20px;
-// }
 .grammar .triangle-left {
     width: 100px;
     height: 0;
@@ -227,7 +142,7 @@ footer span {
     justify-content: left;
     align-items: flex-start;
     text-align: left;
-    margin-top: 12px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -241,6 +156,38 @@ footer span {
     background-color: $white-color;
 }
 
+form .grammar .button {
+    background-color: $black-color;
+    color: $white-color;
+    padding: 5px 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 0px;
+    width: auto; // chỉnh kích cỡ của button
+    text-align: center;
+    // justify-items: center;
+    // align-items: center;
+    // justify-content: center
+}
+
+form .row { 
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+// .button {
+//     background-color: $black-color;
+//     color: $white-color;
+//     padding: 10px 20px; /* Adjust padding for a smaller button */
+//     text-decoration: none;
+//     margin-top: 20px;
+//     font-size: 18px;
+//     border-radius: 5px; /* Rounded corners */
+//     width: auto; /* Remove fixed width */
+//     text-align: center;
+// }
 
 
 /*GRAMMAR*/
