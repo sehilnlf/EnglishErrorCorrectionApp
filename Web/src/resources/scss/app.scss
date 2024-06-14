@@ -99,7 +99,7 @@ footer span {
 }
 
 
-// /*GRAMMAR*/
+/*GRAMMAR*/
 .grammar .form-and-textbox {
     display: flex;
     align-items: center;
@@ -144,6 +144,7 @@ footer span {
     text-align: left;
     margin-top: 20px;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .grammar textarea {
@@ -154,6 +155,7 @@ footer span {
     margin-top: 20px;
     border-radius: 10px;
     background-color: $white-color;
+    font-weight: bold;
 }
 
 form .grammar .button {
@@ -161,7 +163,7 @@ form .grammar .button {
     color: $white-color;
     padding: 5px 50px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 18px;
     border-radius: 0px;
     width: auto; // chỉnh kích cỡ của button
@@ -176,18 +178,6 @@ form .row {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
 }
-
-// .button {
-//     background-color: $black-color;
-//     color: $white-color;
-//     padding: 10px 20px; /* Adjust padding for a smaller button */
-//     text-decoration: none;
-//     margin-top: 20px;
-//     font-size: 18px;
-//     border-radius: 5px; /* Rounded corners */
-//     width: auto; /* Remove fixed width */
-//     text-align: center;
-// }
 
 
 /*GRAMMAR*/

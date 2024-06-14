@@ -106,7 +106,7 @@ app.get('/grammar', (req, res) => {
 });
 
 // Route để xử lý request POST từ form
-app.post('/submit', (req, res) => {
+app.post('/grammar', (req, res) => {
     const textToCorrect = req.body.textToCorrect;
     // Xử lý dữ liệu textToCorrect ở đây (ví dụ: lưu vào database, xử lý ngữ pháp,...)
     console.log(`Received text to correct: ${textToCorrect}`);

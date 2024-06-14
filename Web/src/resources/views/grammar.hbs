@@ -1,4 +1,4 @@
-<form id="correctionForm" method="post" action="/submit">
+<form id="correctionForm" method="post" action="/grammar">
     <div class="grammar">
         <div class="correction-container">
             <div class="row">
@@ -12,13 +12,15 @@
 
             <div class="row" style="justify-content: center;">
                 <div class="form-and-textbox">
-                    <textarea id="textToCorrect" name="textToCorrect" rows="1" cols="50" placeholder="Enter text to correct"></textarea>
-                    <div class="text-box">The computer screen is cracked and needs to be replaced.</div>
+                    <textarea id="textToCorrect" name="textToCorrect" rows="50" cols="50" placeholder="{{this.correctedText}}""></textarea>
+                    <div class="text-box">{{this.correctedText}}</div>
                 </div>
             </div>
 
             <div class="row">
+
                 <button id="submitButton" class="button">CORRECTED</button>
+            
             </div>
 
 
