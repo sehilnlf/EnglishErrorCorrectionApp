@@ -1,0 +1,38 @@
+
+
+
+<div class="grammar">
+    <div class="correction-container">
+        <div class="row">
+            <div class="col">
+                <div class="triangle-left"></div>
+            </div>
+            <div class="col">
+                <div class="triangle-right"></div>
+            </div>
+        </div>
+
+        <div class="row" style="justify-content: center;">
+            <div class="form-and-textbox">
+                <form id="correctionForm" method="post" action="/submit">
+                    <textarea name="textToCorrect" rows="1" cols="50" placeholder="Enter text to correct"></textarea>
+                </form>
+                <div class="text-box">The computer screen is cracked and needs to be replaced.</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <form id="correctionForm" method="post" action="/submit">
+                <button id="submitButton" class="button">CORRECTED</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('submitButton').addEventListener('click', function() {
+        var textToCorrect = document.getElementById('textToCorrect').value;
+        document.getElementById('correctionForm').insertAdjacentHTML('beforeend', '<input type="hidden" name="textToCorrect" value="' + textToCorrect + '">');
+        document.getElementById('correctionForm').submit();
+    });
+</script>
