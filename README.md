@@ -33,7 +33,7 @@ for text, prediction in zip(texts, predictions):
 
 ### How to run app and test
 - Step 1: Clone this repository to your local
-- Step 2: Change by using your hugging face token (read)
+- Step 2: Change **API_TOKEN** by using your hugging face token (read)
 ```javascript
 // Web/index.js
 // request api from hugging face
