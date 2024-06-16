@@ -28,7 +28,9 @@
   "dependencies": {
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "request": "^2.88.2",
+    "requests": "^0.3.0"
   },
   "devDependencies": {
     "husky": "^9.0.11",
