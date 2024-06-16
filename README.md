@@ -1,5 +1,4 @@
 # English Error Correction tool
-[Ongoing]
 English Error Correction tool using transformers model: **facebook/bart-large** to correct grammar error. **Re and difflib library** is to correct typing error.
 
 
