@@ -33,8 +33,15 @@ for text, prediction in zip(texts, predictions):
 
 ### How to run app and test
 - Step 1: Clone this repository to your local
-- Step 2: cd to folder Web/
-- Step 3: Run command: 
+- Step 2: Change by using your hugging face token (read)
+```javascript
+// Web/index.js
+// request api from hugging face
+const API_URL = "https://api-inference.huggingface.co/models/sehilnlf/model_v6";
+const API_TOKEN = "hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; // Thay bằng token thực tế của bạn
+```
+- Step 3: cd to folder Web/
+- Step 4: Run command: 
 ```javascript
 npm run start
 ```
