@@ -32,4 +32,10 @@ for text, prediction in zip(texts, predictions):
     print(f"- {corrected_text}")
 ```
 
-
+### How to run app and test
+Step 1: Clone this repository to your local
+Step 2: cd to folder Web/
+Step 3: Run command: 
+```javascript
+npm run start
+```
