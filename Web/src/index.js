@@ -39,7 +39,7 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // request api từ hugging face
 const API_URL = "https://api-inference.huggingface.co/models/sehilnlf/model_v6";
-const API_TOKEN = "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"; // Thay bằng token thực tế của bạn
+const API_TOKEN = "hf_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; // Thay bằng token thực tế của bạn
 
 
 // Route handlers
