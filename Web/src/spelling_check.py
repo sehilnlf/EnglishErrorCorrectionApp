@@ -12,7 +12,6 @@ else:
     print('Failed to retrieve the file from GitHub:', response.status_code)
     sys.exit(1)
 
-# Stopwords
 words = content.split('\n')
 words = list(map(lambda x: x[:-1], words))
 
