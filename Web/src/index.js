@@ -16,7 +16,6 @@ const scriptPath = path.join(__dirname, 'spelling_check.py');
 // Middleware để xử lý dữ liệu gửi từ client
 app.use(express.urlencoded({ extended: true })); // Dữ liệu gửi dưới dạng form
 app.use(express.json()); // Dữ liệu gửi dưới dạng JSON
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Tạo một instance của Handlebars và đăng ký helper
@@ -41,8 +40,6 @@ app.set('views', path.join(__dirname, 'resources', 'views'));
 // request api từ hugging face
 const API_URL = "https://api-inference.huggingface.co/models/sehilnlf/model_v6";
 const API_TOKEN = "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"; // Thay bằng token thực tế của bạn
-
-
 
 
 // Route handlers
