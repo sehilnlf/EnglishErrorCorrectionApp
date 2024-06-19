@@ -1,0 +1,206 @@
+@charset "UTF-8";
+.step-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #000;
+  text-align: left;
+  margin-top: 26px;
+  margin-left: 35px; }
+
+/* Header Styles */
+.header {
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F4F1EB;
+  /* Optional background color */ }
+
+.header .logo {
+  max-width: 13%;
+  height: auto;
+  display: block; }
+
+.header p {
+  text-align: left;
+  font-family: Arial;
+  font-size: 17px;
+  margin-left: 10px;
+  font-weight: bold; }
+
+/* app.css */
+html, body {
+  height: 100%;
+  margin: 0; }
+
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400vh;
+  background-color: #F4F1EB;
+  color: #010101;
+  text-align: center; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-bottom: 50px; }
+
+h1 {
+  font-size: 72px;
+  font-family: 'Brush Script MT', cursive;
+  margin: 0; }
+
+p {
+  font-size: 20px;
+  margin: 0px 0; }
+
+.button {
+  background-color: #010101;
+  color: #F4F1EB;
+  padding: 5px 50px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 0px;
+  text-align: center;
+  justify-items: center; }
+
+.button:hover {
+  background-color: #010101; }
+
+footer {
+  background-color: #010101;
+  color: #F4F1EB;
+  padding: 10px 0;
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+
+footer span {
+  margin: 0 10px; }
+
+/*GRAMMAR*/
+.form-and-textbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* Adjust the space between form and text box */ }
+
+.correction-container {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; }
+
+.triangle-left {
+  width: 100px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #010101;
+  margin: 0 20px;
+  align-items: left; }
+
+.triangle-right {
+  width: 100px;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid #010101;
+  margin: 0 20px;
+  margin-left: auto; }
+
+.text-box {
+  border: 2px solid #010101;
+  padding: 20px;
+  width: 550px;
+  height: 190px;
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  text-align: left;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold; }
+
+textarea {
+  border: 2px solid #010101;
+  padding: 20px;
+  width: 550px;
+  height: 190px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #F4F1EB;
+  font-weight: bold; }
+
+form .button {
+  background-color: #010101;
+  color: #F4F1EB;
+  padding: 5px 50px;
+  text-decoration: none;
+  margin-top: 50px;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 250px;
+  text-align: center; }
+
+form .row {
+  display: flex;
+  justify-content: center;
+  /* Center content horizontally */
+  align-items: center;
+  /* Center content vertically */ }
+
+/*typing*/
+.typing .error-row {
+  font-size: smaller;
+  color: #F4F1EB;
+  background-color: #010101;
+  width: auto;
+  margin-bottom: 10px;
+  border: 2px solid #010101;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: center;
+  /* Align text to the left */
+  width: 7rem; }
+
+.typing .suggestions {
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  border: 2px solid #010101;
+  cursor: pointer;
+  flex-direction: 1;
+  padding: 20px;
+  width: 550px;
+  height: 190px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #F4F1EB;
+  max-height: 200px;
+  /* Đặt chiều cao tối đa */
+  overflow-y: auto;
+  /* Thêm thanh cuộn dọc nếu vượt quá chiều cao tối đa */ }
+
+.typing .suggestion-row {
+  display: flex;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  /* Cho phép các phần tử con xuống dòng nếu cần */ }
+
+.typing .suggestion {
+  border: 2px solid #010101;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer; }
